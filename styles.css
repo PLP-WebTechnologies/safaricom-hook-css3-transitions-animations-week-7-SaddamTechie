@@ -1,0 +1,97 @@
+/* Gold: #957327
+DarkGreen: #1C5E3C */
+
+h1,h3{
+    color:#1C5E3C ;
+    text-align: center;
+}
+
+body{
+  margin-left: 50px;
+}
+
+/* Part 1: CSS Transitions */
+.btn-hover {
+    padding: 10px 20px;
+    background-color: #957327;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-hover:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    transition: transform 0.5s ease;
+  }
+  
+  .box:hover {
+    transform: rotate(45deg);
+  }
+  
+  /* Part 1: CSS Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animated-banner {
+    padding: 20px;
+    background-color: #1C5E3C;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #957327;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Part 3: Combining CSS Animations with JavaScript */
+  .animated-card {
+    width: 150px;
+    height: 150px;
+    background-color: #9b59b6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .animated-card.visible {
+    opacity: 1;
+  }
+
+  #interactive-animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button{
+    background-color: rgb(29, 29, 226);
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+  }

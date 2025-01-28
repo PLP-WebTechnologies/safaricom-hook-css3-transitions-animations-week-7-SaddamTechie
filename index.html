@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Some magic with JavaScript and CSS animations</h1>
+    </header>
+
+    <main>
+      <!-- Part 1: CSS Transitions -->
+      <section>
+        <h2>Hover Effects:</h2>
+        <button class="btn-hover">Hover Me!</button>
+        <br /><br />
+        <p>Rotating Box</p>
+        <div class="box"></div>
+        <br />
+      </section>
+      <hr />
+      <!-- Part 1: CSS Animations -->
+      <section style="margin-top: 50px">
+        <h2 style="text-align: center">Animations</h2>
+        <div class="animated-banner">Animated Banner</div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          "
+        >
+          <div class="spinner"></div>
+        </div>
+      </section>
+      <hr />
+      <!-- Part 2: JavaScript Functions -->
+      <section style="padding: 10px">
+        <h3>JavaScript Functions</h3>
+        <br /><br />
+        <h4>Area Calculator</h4>
+        <input type="number" id="width" placeholder="Enter width" /><br /><br />
+        <input
+          type="number"
+          id="height"
+          placeholder="Enter height"
+        /><br /><br />
+        <button onclick="calculateArea()">Calculate Area</button>
+        <p
+          style="color: #1c5e3c; font-size: large; font-weight: bold"
+          id="result"
+        ></p>
+      </section>
+
+      <!-- Part 3: Combining CSS Animations with JavaScript -->
+      <section id="interactive-animation">
+        <h2>Interactive Animation</h2>
+        <button
+          style="background-color: #1c5e3c"
+          class="btn-animate"
+          onclick="toggleAnimation()"
+        >
+          Click Me!
+        </button>
+        <div class="animated-card">Animated Card</div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
